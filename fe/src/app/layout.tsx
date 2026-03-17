@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-
-const titleFont = Playfair_Display({
-  variable: "--font-title",
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
 
 const bodyFont = Source_Sans_3({
   variable: "--font-body",
@@ -26,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${titleFont.variable} ${bodyFont.variable} antialiased`}
-      >
+      <body className={`${bodyFont.variable} antialiased`}>
         {children}
       </body>
     </html>

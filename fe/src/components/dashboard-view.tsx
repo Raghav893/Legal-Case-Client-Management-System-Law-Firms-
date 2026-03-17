@@ -57,8 +57,12 @@ export default function DashboardView() {
       >
         <div className="mb-5 flex items-start justify-between">
           <div>
-            <h2 className="text-2xl font-semibold text-[var(--accent)]">Document Drawer</h2>
-            <p className="text-sm text-slate-600">Quick access to active case files</p>
+            <h2 className="text-2xl font-semibold text-[var(--accent)]">
+              Document Drawer
+            </h2>
+            <p className="text-sm text-slate-600">
+              Quick access to active case files
+            </p>
           </div>
           <button
             type="button"
@@ -81,7 +85,9 @@ export default function DashboardView() {
               className="rounded-lg border border-[var(--border)] bg-[var(--muted-surface)] p-3"
             >
               <p className="font-semibold text-slate-800">{document}</p>
-              <p className="mt-1 text-xs text-slate-600">Updated 2h ago - Private</p>
+              <p className="mt-1 text-xs text-slate-600">
+                Updated 2h ago - Private
+              </p>
             </div>
           ))}
         </div>
@@ -130,18 +136,27 @@ export default function DashboardView() {
               key={card.label}
               className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm"
             >
-              <p className="text-sm font-semibold text-slate-600">{card.label}</p>
-              <p className="mt-2 text-3xl font-semibold text-slate-900">{card.value}</p>
-              <p className={`mt-1 text-sm font-semibold ${card.tone}`}>{card.delta}</p>
+              <p className="text-sm font-semibold text-slate-600">
+                {card.label}
+              </p>
+              <p className="mt-2 text-3xl font-semibold text-slate-900">
+                {card.value}
+              </p>
+              <p className={`mt-1 text-sm font-semibold ${card.tone}`}>
+                {card.delta}
+              </p>
             </article>
           ))}
         </section>
 
         <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm">
-            <h2 className="text-2xl font-semibold text-[var(--accent)]">Global Search</h2>
+            <h2 className="text-2xl font-semibold text-[var(--accent)]">
+              Global Search
+            </h2>
             <p className="mt-1 text-sm text-slate-600">
-              Search clients, case numbers, invoices, and documents from one place.
+              Search clients, case numbers, invoices, and documents from one
+              place.
             </p>
 
             <input
@@ -159,7 +174,9 @@ export default function DashboardView() {
                   className="flex w-full items-center justify-between rounded-lg border border-[var(--border)] bg-white px-3 py-2 text-left text-sm text-slate-700 hover:bg-[var(--muted-surface)]"
                 >
                   <span>{result}</span>
-                  <span className="text-xs font-semibold text-slate-500">Open</span>
+                  <span className="text-xs font-semibold text-slate-500">
+                    Open
+                  </span>
                 </button>
               ))}
 
@@ -172,7 +189,9 @@ export default function DashboardView() {
           </div>
 
           <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm">
-            <h2 className="text-2xl font-semibold text-[var(--accent)]">Today&apos;s Focus</h2>
+            <h2 className="text-2xl font-semibold text-[var(--accent)]">
+              Today&apos;s Focus
+            </h2>
             <div className="mt-4 space-y-3">
               {[
                 "10:30 AM - District Court Hearing (CR-2026-118)",

@@ -113,9 +113,9 @@ Since this repository is in initial setup state, this is the recommended order:
 4. Implement auth and role-based access
 5. Connect frontend pages to backend APIs
 
-## Frontend Vibe-Coding Feature Backlog
+## Frontend Feature Backlog
 
-Start with these features first for fast visible progress:
+Recommended frontend features for implementation:
 
 1. Dashboard with live cards
 

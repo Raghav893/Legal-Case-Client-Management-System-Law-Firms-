@@ -182,7 +182,7 @@ export default function Home() {
 
               {searchValue && filteredResults.length === 0 && (
                 <p className="rounded-lg border border-dashed border-[var(--border)] p-4 text-sm text-slate-500">
-                  No matches found for "{searchValue}".
+                  No matches found for &quot;{searchValue}&quot;.
                 </p>
               )}
             </div>

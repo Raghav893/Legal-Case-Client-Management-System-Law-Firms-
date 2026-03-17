@@ -15,8 +15,8 @@ const bodyFont = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Legal Case Client Management Dashboard",
-  description: "Corporate law-firm operations dashboard built with Next.js",
+  title: "Legal Case Client Management System",
+  description: "Corporate law-firm management platform",
 };
 
 export default function RootLayout({
